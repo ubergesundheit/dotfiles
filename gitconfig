@@ -1,0 +1,6 @@
+[user]
+	email = ubergesundheit@googlemail.com
+	name = ubergesundheit
+[core]
+	editor = vim
+	excludesfile = /home/ubergesundheit/.gitignore
