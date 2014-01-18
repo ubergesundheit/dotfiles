@@ -15,11 +15,15 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
 
 set tabstop=2 shiftwidth=2 expandtab 
-colorscheme slate
+"colorscheme slate
+syntax enable
+set background=dark
+colorscheme solarized
 syntax on
 set showcmd
 set ignorecase
