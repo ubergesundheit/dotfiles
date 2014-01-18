@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My bundles here:
@@ -19,7 +19,7 @@ Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
 
-set tabstop=2 shiftwidth=2 expandtab 
+set tabstop=2 shiftwidth=2 expandtab
 "colorscheme slate
 syntax enable
 set background=dark
@@ -40,5 +40,10 @@ set number
 set notimeout ttimeout ttimeoutlen=200
 set list listchars=tab:\|_,trail:·
 :nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" Remove trailing whitespace before saving a file
+if has("autocmd")
+  autocmd BufWritePre * :%s/\s\+$//e
+endif
 
 au VimEnter *  NERDTree
