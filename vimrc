@@ -46,4 +46,12 @@ if has("autocmd")
   autocmd BufWritePre * :%s/\s\+$//e
 endif
 
-au VimEnter *  NERDTree
+" au VimEnter *  NERDTree
+ :command WQ wq
+ :command Wq wq
+ :command W w
+ :command Q q
+
+if has("gui_macvim")
+  :set guifont=Source\ Code\ Pro:h16
+end
