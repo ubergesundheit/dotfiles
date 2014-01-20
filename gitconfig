@@ -3,4 +3,4 @@
 	name = ubergesundheit
 [core]
 	editor = vim
-	excludesfile = /home/ubergesundheit/.gitignore
+	excludesfile = ~/.gitignore
