@@ -1,6 +1,8 @@
 [user]
-	email = ubergesundheit@googlemail.com
-	name = ubergesundheit
+  email = ubergesundheit@googlemail.com
+  name = ubergesundheit
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+  editor = vim
+  excludesfile = ~/.gitignore
+[help]
+  autocorrect = 1
