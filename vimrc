@@ -53,5 +53,5 @@ endif
  :command Q q
 
 if has("gui_macvim")
-  :set guifont=Source\ Code\ Pro:h16
+  :set guifont=Source\ Code\ Pro:h15
 end
