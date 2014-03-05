@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on     " required!
 
