@@ -17,6 +17,7 @@ Bundle 'bling/vim-airline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on     " required!
 
