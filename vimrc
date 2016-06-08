@@ -1,32 +1,12 @@
+set exrc
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" My bundles here:
-"
-" original repos on GitHub
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'plasticboy/vim-markdown'
-
 filetype plugin indent on     " required!
-
 set tabstop=2 shiftwidth=2 expandtab
-"colorscheme slate
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme slate
 syntax on
 set showcmd
 set ignorecase
@@ -37,11 +17,8 @@ set nostartofline
 set ruler
 set laststatus=2
 set confirm
-"set visualbell
 set number
-"set cmdheight=2
-set notimeout ttimeout ttimeoutlen=200
-set list listchars=tab:\|_,trail:·
+set list listchars=tab:›·,trail:·
 :nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Remove trailing whitespace before saving a file
@@ -49,12 +26,4 @@ if has("autocmd")
   autocmd BufWritePre * :%s/\s\+$//e
 endif
 
-" au VimEnter *  NERDTree
- :command WQ wq
- :command Wq wq
- :command W w
- :command Q q
-
-if has("gui_macvim")
-  :set guifont=Source\ Code\ Pro:h15
-end
+set secure
