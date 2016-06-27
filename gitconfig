@@ -1,7 +1,7 @@
 [user]
   email = ubergesundheit@googlemail.com
   name = ubergesundheit
-	signingkey = D4F7C544
+  signingkey = D4F7C544
 [core]
   editor = vim
   excludesfile = ~/.gitignore
@@ -10,6 +10,6 @@
 [branch]
   autosetupmerge = always
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [commit]
-	gpgsign = true
+  gpgsign = true
