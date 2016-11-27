@@ -5,8 +5,6 @@ filetype off                  " required!
 filetype plugin indent on     " required!
 set tabstop=2 shiftwidth=2 expandtab
 syntax enable
-set background=dark
-colorscheme slate
 syntax on
 set showcmd
 set ignorecase
@@ -25,5 +23,13 @@ set list listchars=tab:›·,trail:·
 if has("autocmd")
   autocmd BufWritePre * :%s/\s\+$//e
 endif
+set term=xterm-256color
 
 set secure
+execute pathogen#infect()
+
+set background=dark
+let g:gruvbox_italic=1
+set termguicolors
+set t_ut=
+colorscheme gruvbox
