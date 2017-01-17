@@ -16,6 +16,12 @@ set ruler
 set laststatus=2
 set confirm
 set number
+set ai
+set cursorline
+set encoding=utf8
+set nobackup
+set noswapfile
+set nowb
 set list listchars=tab:›·,trail:·
 :nnoremap <silent> <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
